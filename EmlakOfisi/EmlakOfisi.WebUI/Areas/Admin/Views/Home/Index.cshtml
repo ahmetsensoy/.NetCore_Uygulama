@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+@model List<EmlakOfisi.WebUI.Models.AgentModel>
+
+<div>
+
+
+    <div class="row justify-content-sm-around mt-3">
+        <div class="col ml-5" style="text-align:left;">
+            <a class="btn btn-success" href="/Admin/CreateAgent">Yeni Emlakçı Kayıt Oluştur</a>
+        </div>
+        <div class="col mr-5" style="text-align:right;">
+            <a class="btn btn-warning" href="/Login/Exit">Çıkış Yap</a>
+        </div>
+    </div>
+    <div class="m-5">
+        <div class="text-center mb-4" style="font-size:xx-large">Kayıtlı Emlakçılar</div>
+        <table class="table table-bordered" style="background-color:rgba(255, 255, 255, 0.5);">
+
+
+            <tr>
+                <th>Id</th>
+                <th>Kullanıcı Adı</th>
+                <th>Şirket İsmi</th>
+                <th>Sil</th>
+
+            </tr>
+            @foreach (var d in Model)
+            {
+                <tr class="satir" id="advertisement-@d.Id">
+                    <td>@d.Id</td>
+                    <td>@d.Username</td>
+                    <td>@d.CompanyName</td>
+                    <td><a class="btn btn-danger" href="/Admin/Home/Delete/@d.Id">Sil</a></td>
+                </tr>
+            }
+        </table>
+
+    </div>
+</div>

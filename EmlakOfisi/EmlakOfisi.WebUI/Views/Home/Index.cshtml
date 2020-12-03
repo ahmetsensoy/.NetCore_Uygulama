@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<EmlakOfisi.WebUI.Models.AdvertisementModel>
+
+    <div class="row mt-3 mr-3 ml-3">
+        <div class="col " style="text-align: left">
+            <a class="btn btn-success" href="/Advertisement/Create">İlan Oluştur</a>
+
+        </div>
+        <div class="col"  style="text-align: center; font-size:x-large; background-color:ghostwhite; border-radius:12px;">
+            <span>@ViewData["CompanyName"]</span>
+            <span>-</span>
+            <span>@ViewData["UserName"]</span>
+        </div>
+        <div class="col" style="text-align:right">
+            <a class="btn btn-info" href="/Account/Update">Şifre Değiştir</a>
+            <a class="btn btn-warning" href="/Login/Exit">Çıkış Yap</a>
+        </div>
+        
+    </div>
+<div class="m-5">
+
+    <form method="get">
+
+        <div class="row p-2 m-1" style="background-color:white; border-radius:15px;">
+            <div class="col p-2">
+                <label for="IdSearch">Başlıklarda aranacak kelime:</label>
+                <input type="text"  name="search" id="IdSearch" />
+            </div>
+            <div class="col p-2">
+                <label for="IdRoomCount">Oda sayısı:</label>
+                <input type="number"  name="roomCount" id="IdRoomCount" />
+            </div>
+            <div class="col p-2">
+                <label for="IdAge">Konut yaşı:</label>
+                <input type="number"  name="age" id="IdAge" />
+            </div>
+            <div class="col p-2">
+                <button class="btn btn-dark" type="submit">Filtrele</button>
+
+            </div>
+        </div>
+
+
+    </form>
+    <table class="table table-bordered" style="background-color:rgba(255, 255, 255, 0.5);">
+
+
+        <tr>
+            <th>İlan Başlığı</th>
+            <th>Oda Sayısı</th>
+            <th>Konut Yaşı</th>
+            <th>Metre Kare</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+
+        </tr>
+        @foreach (var d in Model)
+        {
+            <tr class="satir" id="advertisement-@d.Id">
+                <td>@d.Title</td>
+                <td>@d.NumberOfRoom</td>
+                <td>@d.AgeOfHouse</td>
+                <td>@d.SquareMeter</td>
+                <td><a class="btn btn-success" href="/Advertisement/Update/@d.Id">Güncelle</a></td>
+                <td><a class="btn btn-danger" href="/Advertisement/Delete/@d.Id">Sil</a></td>
+            </tr>
+        }
+    </table>
+
+</div>

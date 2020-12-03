@@ -1,0 +1,211 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Business\\EmlakOfisi.Business.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Business\\EmlakOfisi.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Business\\EmlakOfisi.Business.csproj",
+        "projectName": "EmlakOfisi.Business",
+        "projectPath": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Business\\EmlakOfisi.Business.csproj",
+        "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MONSTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.DataAccess\\EmlakOfisi.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.DataAccess\\EmlakOfisi.DataAccess.csproj"
+              },
+              "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Entities\\EmlakOfisi.Entities.csproj": {
+                "projectPath": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Entities\\EmlakOfisi.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.DataAccess\\EmlakOfisi.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.DataAccess\\EmlakOfisi.DataAccess.csproj",
+        "projectName": "EmlakOfisi.DataAccess",
+        "projectPath": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.DataAccess\\EmlakOfisi.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MONSTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Entities\\EmlakOfisi.Entities.csproj": {
+                "projectPath": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Entities\\EmlakOfisi.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            },
+            "System.Linq.Expressions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Entities\\EmlakOfisi.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Entities\\EmlakOfisi.Entities.csproj",
+        "projectName": "EmlakOfisi.Entities",
+        "projectPath": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Entities\\EmlakOfisi.Entities.csproj",
+        "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MONSTER\\Desktop\\Proje\\EOfis\\EmlakOfisi\\EmlakOfisi.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MONSTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0-preview.6.20312.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
